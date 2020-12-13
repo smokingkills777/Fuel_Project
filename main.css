@@ -244,7 +244,11 @@ header{
     font-weight: 600;
 }
 
-
+footer{
+    background-color: #C8A35F;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
 
 .gallery{
     background-color: #2F343A;
@@ -273,4 +277,11 @@ header{
 }
 .gallery{
     padding-top: 70px;
+}
+
+.nav{
+    justify-content: flex-end;
+}
+.nav a:hover{
+    color: #C8A35F;
 }
