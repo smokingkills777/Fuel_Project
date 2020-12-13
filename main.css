@@ -171,7 +171,7 @@ header{
     text-align: center;
 }
 .doing__item img{
-    min-width: 147px;
+    max-height: 130px;
 }
 .doing__item h5{
     margin-top: 30px;
@@ -213,15 +213,64 @@ header{
 .map{
     margin-top: 100px;
 }
+.map-responsive{
+    overflow: hidden;
+    padding-bottom: 330px;
+    position: relative;
+    height: 0;
+}
+.map-responsive iframe{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
 .mail{
     margin: 0 auto;
     margin-top: 50px;
     font-size: 16px;
 }
 .mail .col{
-    display: flex;
-    align-items: center;
+    vertical-align: middle;
 }
 .mail img{
-    min-height: 30px;
+    max-height: 60px;
+}
+.mail p{
+    font-size: 16px;
+}
+.mail span{
+    font-weight: 600;
+}
+
+
+
+.gallery{
+    background-color: #2F343A;
+}
+.gallery__item{
+    margin-bottom: 80px;
+    overflow: hidden;
+    transition: transform .3s linear;
+}
+.gallery__item:hover{
+    transform: scale(1.05);
+}
+.gallery img{
+    max-height: 180px;
+}
+.gallery h2{
+    margin-bottom: 40px;
+}
+.gallery p{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+    background-color: #393F47;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.gallery{
+    padding-top: 70px;
 }
