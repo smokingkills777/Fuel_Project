@@ -7,9 +7,13 @@ body{
     font-family: 'Roboto', sans-serif;
     color: #fff;
 }
+a{
+    cursor: pointer !important;
+}
 a, a:hover{
     text-decoration: none;
     color: #fff;
+
 }
 h2{
     margin-top: 35px;
@@ -35,7 +39,6 @@ header{
 }
 .navigation a:hover{
     color: #C8A35F;
-    text-decoration: none;
 }
 .intro{
     background: url(img/intro_img.jpg) center/ cover no-repeat;
@@ -239,6 +242,7 @@ header{
 }
 .mail p{
     font-size: 16px;
+    margin: 0;
 }
 .mail span{
     font-weight: 600;
@@ -246,12 +250,20 @@ header{
 
 footer{
     background-color: #C8A35F;
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.nav{
+    justify-content: flex-end;
+}
+.nav a:hover{
+    color: #C8A35F;
 }
 
 .gallery{
     background-color: #2F343A;
+    padding-top: 70px;
 }
 .gallery__item{
     margin-bottom: 80px;
@@ -275,13 +287,25 @@ footer{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.gallery{
-    padding-top: 70px;
+
+.break{
+    background-color: #393F47;
+    padding-bottom: 200px;
+}
+.break .col{
+    background-color: #2F343A;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 200px;
+}
+.break h2{
+    margin-bottom: 60px;
+}
+.break__list{
+    padding: 40px 60px;
 }
 
-.nav{
-    justify-content: flex-end;
+#second-location{
+    background-color: #2F343A;
 }
-.nav a:hover{
-    color: #C8A35F;
-}
+
