@@ -263,7 +263,6 @@ footer{
 
 .gallery{
     background-color: #2F343A;
-    padding-top: 70px;
 }
 .gallery__item{
     margin-bottom: 80px;
@@ -309,3 +308,15 @@ footer{
     background-color: #2F343A;
 }
 
+
+@media screen and (max-width: 768px){
+    p{
+        font-size: 16px;
+    }
+    .service__item h4{
+        margin-bottom: 50px;
+    }
+    .doing__item p{
+        margin-top: 30px;
+    }
+}
