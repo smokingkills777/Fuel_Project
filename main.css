@@ -13,7 +13,6 @@ a{
 a, a:hover{
     text-decoration: none;
     color: #fff;
-
 }
 h2{
     margin-top: 35px;
@@ -24,6 +23,13 @@ h5{
 p{
     font-size: 18px;
 }
+button:active, button:focus {
+    outline: none;
+}
+button::-moz-focus-inner {
+    border: 0;
+}
+
 header{
     background-color: #393F47;
     padding-top: 15px;
@@ -60,9 +66,7 @@ header{
     font-size: 24px;
 }
 .intro-phone{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 .intro-phone a{
     padding: 30px 39px;
@@ -190,25 +194,32 @@ header{
 .questions h2{
     margin-bottom: 60px;
 }
-.drop{
+.accordion {
     background-color: #393F47;
-    margin: 20px 10px 0px 10px;
-    padding: 26px 15px;
-    z-index: 5;
-    border-radius: 10px;
+    color: #fff;
     cursor: pointer;
-    transition: all .3s linear;
+    padding: 26px 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: all 0.4s linear;
+    margin-top: 20px;
+} 
+.active, .accordion:hover {
+    background-color: #484c52;
 }
-.drop:hover{
-    Box-shadow:0px 2px 0px #fff,0px -2px 0px #fff,2px 0px 0px #fff,-2px 0px 0px #fff;
+.panel {
+    padding: 0 18px;
+    background-color: #484c52;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
-.dropi{
-    transition-property: all;
-    transition-duration: .5s;
-    z-index: -1;
-    position: relative;
-    bottom: 20px;
+.panel p{
+    font-size: 16px;
 }
+
 .location{
     background-color: #393F47;
     padding-bottom: 80px;
@@ -313,10 +324,34 @@ footer{
     p{
         font-size: 16px;
     }
+    .section{
+        padding-top: 75px;
+    }
+    .intro-phone a{
+        padding: 15px 20px;
+        border-radius: 10px;
+    }
+    .about_items p{
+        margin-top: 15px;
+    }
+    .about_items .col{
+        margin-top: 20px;
+    }
     .service__item h4{
         margin-bottom: 50px;
     }
+    .doing__item img{
+        max-height: 100px;
+    }
     .doing__item p{
         margin-top: 30px;
+    }
+}
+@media screen and (max-width: 425px){
+    .intro-phone{
+        margin-top: 100px;
+    }
+    .intro-phone__item{
+        margin-top: 40px;
     }
 }
