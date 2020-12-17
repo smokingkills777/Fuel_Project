@@ -7,6 +7,9 @@ body{
     font-family: 'Roboto', sans-serif;
     color: #fff;
 }
+ul{
+    list-style-type: none;
+}
 a{
     cursor: pointer !important;
 }
@@ -81,9 +84,9 @@ header{
 
 .section{
     padding-top: 100px;
+    padding-bottom: 150px;
 }
 .about{
-    padding-bottom: 250px;
     background-color: #2F343A;
     text-align: center;
 }
@@ -101,14 +104,11 @@ header{
 .about_items{
     margin-top: 75px;
 }
-.about_items a{
-    text-decoration: none;
-}
-.about_items .col{
+.about_items__elem{
     padding-top: 15px;
     transition: all .3s linear;
 }
-.about_items .col:hover{
+.about_items__elem:hover{
     transform: translateY(-15px);
     border-radius: 5px;
     cursor: pointer;
@@ -120,7 +120,6 @@ header{
 
 .repair{
     background-color: #393F47;
-    padding-bottom: 100px;
 }
 
 .button{
@@ -141,20 +140,19 @@ header{
 
 .service{
     background-color: #2F343A;
-    padding-bottom: 180px;
 }
 .service h2{
     margin-bottom: 60px;
 }
 .service__item{
     background-color: #393F47;
-    margin-left: 3%;
-    margin-right: 3%;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 30px;
     border-radius: 20px;
     transition: transform .2s linear;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 .service__item:hover{
     transform: scale(1.1, 1.1);
@@ -169,7 +167,6 @@ header{
 
 .doing{
     background-color: #393F47;
-    padding-bottom: 195px;
 }
 .doing h2{
     margin-bottom: 60px;
@@ -189,7 +186,6 @@ header{
 
 .questions{
     background-color: #2F343A;
-    padding-bottom: 160px;
 }
 .questions h2{
     margin-bottom: 60px;
@@ -222,7 +218,6 @@ header{
 
 .location{
     background-color: #393F47;
-    padding-bottom: 80px;
 }
 .map{
     margin-top: 100px;
@@ -274,6 +269,7 @@ footer{
 
 .gallery{
     background-color: #2F343A;
+    padding-bottom: 50px;
 }
 .gallery__item{
     margin-bottom: 80px;
@@ -284,7 +280,7 @@ footer{
     transform: scale(1.05);
 }
 .gallery img{
-    max-height: 180px;
+    width: 100%;
 }
 .gallery h2{
     margin-bottom: 40px;
@@ -302,10 +298,10 @@ footer{
     background-color: #393F47;
     padding-bottom: 200px;
 }
-.break .col{
+.break-list, .break-img{
     background-color: #2F343A;
-    margin-left: 1%;
     margin-right: 1%;
+    margin-left: 1%;
     height: 200px;
 }
 .break h2{
@@ -319,7 +315,19 @@ footer{
     background-color: #2F343A;
 }
 
+.product{
+    background-color: #2F343A;
+}
+.product__view h4{
+    padding: 10px 0;
+    background-color: #393F47;
+}
 
+@media screen and (max-width: 1024px){
+    .about_items img{
+        max-height: 170px;
+    }
+}
 @media screen and (max-width: 768px){
     p{
         font-size: 16px;
@@ -341,17 +349,75 @@ footer{
         margin-bottom: 50px;
     }
     .doing__item img{
-        max-height: 100px;
+        max-height: 80px;
     }
     .doing__item p{
         margin-top: 30px;
     }
+
+    .gallery__item{
+        margin-bottom: 40px;
+    }
+    .break-img{
+        margin-top: 20px;
+    }
 }
 @media screen and (max-width: 425px){
+    h2{
+        text-align: center;
+    }
+    .section{
+        padding-top: 60px;
+    }
+    .line{
+        margin: 0 auto;
+    }
+    .navigation{
+        justify-content: center;
+    }
+    .navigation a{
+        margin-top: 15px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
     .intro-phone{
         margin-top: 100px;
     }
     .intro-phone__item{
         margin-top: 40px;
+    }
+    .about{
+        padding-bottom: 100px;
+    }
+    .about_items img{
+        max-height: 130px;
+    }
+    .button{
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .service__item{
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .doing__item{
+        margin-top: 40px;
+    }
+    .doing__item p, .doing__item h5{
+        margin-top: 15px;
+    }
+    .mail__item{
+        margin-top: 20px;
+    }
+
+    .nav{
+        margin-bottom: 20px;
+    }
+    .gallery__item{
+        margin-bottom: 20px;
+    }
+    .break{
+        padding-bottom: 70px;
     }
 }
