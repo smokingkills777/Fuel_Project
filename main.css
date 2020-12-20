@@ -35,19 +35,36 @@ button::-moz-focus-inner {
 
 header{
     background-color: #393F47;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 50px;
     font-weight: 500;
 }
+header .button{
+    margin: 0;
+    font-size: 16px;
+    border-radius: 10px;
+    height: 50px;
+}
+header .button i{
+    margin-left: 10px;
+}
 .navigation{
-    display: flex;
-    justify-content: flex-end;
+    margin-top: 20px;
+    background-color: #2F343A;
+    padding-top: 20px;
+    padding-bottom: 7px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .navigation a{
-    margin-left: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 10px 20px 10px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all 0.2s linear;
 }
 .navigation a:hover{
-    color: #C8A35F;
+    background-color: #C8A35F;
 }
 .intro{
     background: url(img/intro_img.jpg) center/ cover no-repeat;
