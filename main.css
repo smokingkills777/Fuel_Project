@@ -69,9 +69,12 @@ header .button i {
     padding: 10px 20px 10px 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    transition: background-color 0.2s linear;
+    transition: transform 0.2s linear;
 }
 .navigation a:hover {
+    transform: translateY(-10px);
+}
+.navigation-active{
     background-color: var(--color-yellow);
 }
 
@@ -136,10 +139,10 @@ header .button i {
 .about_items__elem {
     padding-top: 15px;
     transition: all 0.3s linear;
+    border-radius: 5px;
 }
 .about_items__elem:hover {
     transform: translateY(-15px);
-    border-radius: 5px;
     cursor: pointer;
 }
 .about_items img {
@@ -477,7 +480,29 @@ footer {
     padding-top: 135px;
     padding-bottom: 135px;
 }
-
+.contacts{
+    background-color: var(--color-dark-grey);
+}
+.contacts__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.contacts__item img{
+    max-width: 50px;
+}
+.contacts p{
+    margin: 0;
+    margin-left: 5%;
+}
+.contacts span{
+    font-weight: 700;
+    margin-right: 20px;
+}
+.contacts a:hover{
+    color: var(--color-yellow);
+}
 @media screen and (max-width: 1024px) {
     .about_items img {
         max-height: 170px;
