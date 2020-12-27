@@ -54,7 +54,9 @@ header .button {
 header .button i {
     margin-left: 10px;
 }
-
+.navigation-menu{
+    display: none;
+}
 .navigation {
     margin-top: 20px;
     background-color: var(--color-dark-grey);
@@ -69,10 +71,10 @@ header .button i {
     padding: 10px 20px 10px 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    transition: transform 0.2s linear;
+    transition: box-shadow 0.2s linear;
 }
 .navigation a:hover {
-    transform: translateY(-10px);
+    box-shadow: inset 0 0 0 2px var(--color-yellow);
 }
 .navigation-active{
     background-color: var(--color-yellow);
@@ -162,12 +164,12 @@ header .button i {
     justify-content: center;
     width: 35%;
     height: 60px;
-    transition: box-shadow 0.3s linear;
+    transition: box-shadow 0.2s linear;
     border-radius: 3px;
     cursor: pointer;
 }
 .button:hover {
-    Box-shadow: 0px 2px 0px #fff, 0px -2px 0px #fff, 2px 0px 0px #fff, -2px 0px 0px #fff;
+    box-shadow: inset 0 0 0 3px #fff;
 }
 .slider {
     width: 276px;
@@ -510,6 +512,12 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    h2 {
+        text-align: center;
+    }
+    .line {
+        margin: 0 auto;
+    }
     p {
         font-size: 16px;
     }
@@ -533,6 +541,11 @@ footer {
     }
     .service__item h4 {
         margin-bottom: 50px;
+    }
+    .repair .button{
+        margin: 0 auto;
+        margin-bottom: 30px;
+        margin-top: 50px;
     }
     .doing__item img {
         max-height: 80px;
@@ -560,8 +573,8 @@ footer {
 }
 
 @media screen and (max-width: 425px) {
-    h2 {
-        text-align: center;
+    div{
+        font-size: 14px;
     }
     p {
         font-size: 14px;
@@ -570,11 +583,19 @@ footer {
         padding-top: 60px;
         padding-bottom: 80px;
     }
-    .line {
-        margin: 0 auto;
+    .header-logo, .header-phone, .header-call{
+        margin-bottom: 10px;
+    }
+    .navigation-menu{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    } 
+    .navigation-menu img{
+        max-width: 20px;
     }
     .navigation {
-        justify-content: center;
+        display: none;
     }
     .intro-phone {
         margin-top: 100px;
@@ -587,10 +608,6 @@ footer {
     }
     .about_items img {
         max-height: 130px;
-    }
-    .button {
-        margin: 0 auto;
-        margin-top: 50px;
     }
     .service__item {
         margin-top: 20px;
@@ -620,4 +637,12 @@ footer {
         margin: 0 auto;
         margin-bottom: 20px;
     }
+    .product__description__section__text{
+        width: 75%;
+    }
+    .product__description__section__price{
+        width: 25%;
+        padding: 5px 5px;
+    }
+
 }
